@@ -1,0 +1,60 @@
+html, body {
+  position:absolute;
+  top:0; left:0; right:0; bottom:0;
+  background: #ffffff;
+}
+
+a {
+  font: 50px arial;
+  outline:none;
+  color:green;
+  text-shadow:0px 0px 8px silver;
+  transition:all 100ms ease-in-out;
+  -webkit-transition:all 100ms ease-in-out;
+  -moz-transition:all 100ms ease-in-out;
+  -o-transition:all 100ms ease-in-out;
+  -ms-transition:all 100ms ease-in-out;
+}
+
+a:hover {
+  color:#567;
+}
+
+#crosshair-h {
+  width: 100%;
+}
+
+#crosshair-v {
+  height: 100%;
+}
+
+.hair {
+  position: fixed;
+  top:0; left:0;
+  margin-top: -3px;
+  margin-left: -2px;
+  background: transparent;
+  border-top: 1px dotted #000;
+  border-left: 1px dotted #000;
+  pointer-events: none;
+  z-index: 2;
+}
+
+#mousepos {
+  position: absolute;
+  top:0; left:0;
+  padding: 10px;
+  margin: 10px;
+  font: 14px arial;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  border-radius: 24px;
+  z-index: 8;
+}
+
+#img{
+  left:555;
+  top:120;
+  z-index: 2;
+  position: absolute;
+}
